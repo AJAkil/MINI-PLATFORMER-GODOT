@@ -20,4 +20,4 @@ position = Vector2( 80, 310 )
 
 [node name="world complete" parent="." instance=ExtResource( 3 )]
 position = Vector2( 530, 580 )
-next_world = "res://world.tscn"
+next_world = "res://world3.tscn"
