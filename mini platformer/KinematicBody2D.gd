@@ -17,12 +17,12 @@ func _physics_process(delta):
 	
 	if Input.is_action_pressed("ui_right"):
 		motion.x = min(motion.x+ACCELERATION, MAX_SPEED)
-		print(motion.x)
+		# print(motion.x)
 		$Sprite.flip_h = false  #for flipping the sprite  #$lets us use the sprite
 		$Sprite.play("RUN")
 	elif Input.is_action_pressed("ui_left"):
 		motion.x = max(motion.x-ACCELERATION, -MAX_SPEED)
-		print(motion.x)
+		# print(motion.x)
 		$Sprite.flip_h = true
 		$Sprite.play("RUN")
 	else:
@@ -48,4 +48,4 @@ func _physics_process(delta):
 			
 	# we save the motion so that when it collides, the vector is set to 0,0	
 	motion = move_and_slide(motion, UP)
-	print(motion)
+	# print(motion)
